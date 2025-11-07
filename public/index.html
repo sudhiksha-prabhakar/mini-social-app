@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Mini Social Media App</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <h1>Mini Social Media App 🚀</h1>
+
+  <div id="auth">
+    <h2>Signup / Login</h2>
+    <input id="username" placeholder="Username" />
+    <input id="password" placeholder="Password" type="password" />
+    <input id="bio" placeholder="Bio (for signup)" />
+    <button onclick="signup()">Signup</button>
+    <button onclick="login()">Login</button>
+  </div>
+
+  <div id="app" style="display:none">
+  <h2>Welcome to Mini Social Media</h2>
+  <div id="navbar">
+    <button onclick="showFeed()">🏠 Feed</button>
+    <button onclick="showProfile()">👤 Profile</button>
+    <button onclick="logout()">🚪 Logout</button>
+  </div>
+
+  <div id="feedSection">
+    <textarea id="content" placeholder="What's on your mind?"></textarea><br>
+    <button onclick="createPost()">📤 Post</button>
+    <div id="posts"></div>
+  </div>
+
+  <div id="profileSection" style="display:none;">
+    <h3>Your Profile</h3>
+    <p><strong>Username:</strong> <span id="profileUsername"></span></p>
+    <p><strong>Bio:</strong> <span id="profileBio"></span></p>
+    <p><strong>Followers:</strong> <span id="followersCount">0</span> | <strong>Following:</strong> <span id="followingCount">0</span></p>
+    <h4>Your Posts:</h4>
+    <div id="userPosts"></div>
+  </div>
+</div>
+
+
+
+  <script src="script.js"></script>
+</body>
+</html>

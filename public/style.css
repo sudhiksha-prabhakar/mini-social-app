@@ -1,0 +1,253 @@
+body {
+  font-family: Arial, sans-serif;
+  background: #f7f9fc;
+  padding: 20px;
+}
+
+h1 {
+  color: #333;
+}
+
+#auth, #app {
+  background: white;
+  padding: 20px;
+  border-radius: 10px;
+  max-width: 500px;
+  margin: 20px auto;
+  box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+}
+
+input, textarea {
+  width: 100%;
+  margin: 5px 0;
+  padding: 8px;
+}
+
+button {
+  margin-top: 5px;
+  padding: 8px 12px;
+  background-color: #007bff;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.post {
+  background: #eef3ff;
+  margin: 10px 0;
+  padding: 10px;
+  border-radius: 5px;
+}
+
+button {
+  margin-right: 5px;
+}
+
+.comments {
+  background: #fff;
+  padding: 5px 10px;
+  border-radius: 5px;
+  margin-top: 5px;
+}
+
+#profileSection {
+  padding: 10px;
+}
+
+.post-card {
+  border: 1px solid #ccc;
+  padding: 8px;
+  margin: 8px 0;
+  border-radius: 10px;
+  background: #fdfdfd;
+}
+
+.comment {
+  margin-left: 10px;
+  color: #555;
+  font-size: 0.9em;
+}
+
+/* ---------- Global Styles ---------- */
+body {
+  font-family: "Segoe UI", sans-serif;
+  background: #f0f2f5;
+  margin: 0;
+  padding: 0;
+  text-align: center;
+  color: #333;
+}
+
+h1 {
+  background: #1877f2;
+  color: white;
+  padding: 15px 0;
+  margin: 0;
+}
+
+button {
+  background: #1877f2;
+  color: white;
+  border: none;
+  border-radius: 6px;
+  padding: 8px 14px;
+  cursor: pointer;
+  transition: 0.2s;
+  margin: 3px;
+}
+
+button:hover {
+  background: #145dbf;
+}
+
+/* ---------- Auth Section ---------- */
+#auth {
+  background: white;
+  width: 320px;
+  margin: 60px auto;
+  padding: 25px;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0,0,0,0.1);
+}
+
+#auth input {
+  display: block;
+  width: 90%;
+  margin: 10px auto;
+  padding: 8px;
+  border-radius: 6px;
+  border: 1px solid #ccc;
+}
+
+/* ---------- App Section ---------- */
+#app {
+  max-width: 600px;
+  margin: 20px auto;
+  background: white;
+  padding: 20px;
+  border-radius: 12px;
+  box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+}
+
+#navbar {
+  display: flex;
+  justify-content: space-around;
+  margin-bottom: 15px;
+  border-bottom: 1px solid #eee;
+  padding-bottom: 10px;
+}
+
+/* ---------- Feed Section ---------- */
+#feedSection textarea {
+  width: 95%;
+  border-radius: 8px;
+  border: 1px solid #ccc;
+  padding: 10px;
+  resize: none;
+  font-size: 1em;
+  margin-bottom: 10px;
+}
+
+.post {
+  background: #f9fafc;
+  margin: 12px 0;
+  padding: 12px;
+  border-radius: 10px;
+  text-align: left;
+  border: 1px solid #e3e3e3;
+  transition: 0.2s;
+}
+
+.post:hover {
+  background: #eef3ff;
+}
+
+.comments {
+  margin-left: 15px;
+  font-size: 0.9em;
+  color: #555;
+}
+
+/* ---------- Profile Section ---------- */
+#profileSection {
+  text-align: left;
+}
+
+#profileSection p, h3, h4 {
+  margin-left: 10px;
+}
+
+#userPosts .post {
+  background: #f8f9fb;
+  border: 1px solid #ddd;
+}
+
+/* ---------- Responsive ---------- */
+@media (max-width: 600px) {
+  #app, #auth {
+    width: 90%;
+    margin: 20px auto;
+  }
+}
+
+button:nth-child(3) {
+  background: #42b72a;
+}
+
+button:nth-child(3):hover {
+  background: #369e23;
+}
+
+.post-head { display:flex; align-items:center; gap:8px; }
+.post-time { color:#777; font-size:0.9em; }
+.post-content { margin:6px 0 8px; white-space:pre-wrap; }
+.post-actions { margin-bottom:8px; }
+.follow-btn { background:#42b72a; margin-left:6px; }
+
+.avatar {
+  width:36px;
+  height:36px;
+  border-radius:50%;
+  background:#cfd8dc;
+  display:inline-flex;
+  align-items:center;
+  justify-content:center;
+  color:#fff;
+  font-weight:600;
+  margin-right:8px;
+  text-transform:uppercase;
+  flex-shrink:0;
+}
+.post-head { display:flex; align-items:center; gap:10px; }
+.post-head .meta { display:flex; align-items:center; gap:8px; }
+
+@keyframes fadeUp {
+  from { opacity:0; transform: translateY(6px); }
+  to { opacity:1; transform: translateY(0); }
+}
+.post {
+  animation: fadeUp 260ms ease both;
+}
+.add-comment { display:flex; gap:8px; margin-top:8px; }
+.comment-input { flex:1; padding:6px 8px; border-radius:6px; border:1px solid #ccc; }
+.comment-send { padding:6px 10px; }
+
+/* Follow button styling */
+.follow-btn {
+  background-color: #42b72a; /* green */
+  color: white;
+  border: none;
+  border-radius: 6px;
+  padding: 6px 12px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.follow-btn.unfollow {
+  background-color: #e63946; /* red */
+}
+
+.follow-btn:hover {
+  opacity: 0.85;
+}
